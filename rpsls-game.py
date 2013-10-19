@@ -32,7 +32,7 @@ def number_to_name(number):
         name_to_number = 'scissors'
     else :
         print "Name not in this game!"
-        print "invalid Number"
+        
     return name_to_number
 
     # convert number to a name using if/elif/else
@@ -42,19 +42,19 @@ def number_to_name(number):
 def name_to_number(name):
     # fill in your code below
     if name == "rock":
-        'rock' == 0
+        number_to_name = 0
     elif name == "Spock":
-        Spock = 1
+        number_to_name = 1
     elif name == "paper":
-        paper = 2
+        number_to_name = 2
     elif name == "lizard":
-        lizard = 3
+        number_to_name = 3
     elif name == "scissors":
-        scissors = 4
+        number_to_name = 4
     else :
-        print "Name not in this game!"
+        print "invalid Number"
     
-    return name
+    return number_to_name
     # convert name to number using if/elif/else
     # don't forget to return the result!
 
