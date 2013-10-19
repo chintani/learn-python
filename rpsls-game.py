@@ -20,17 +20,20 @@ Created on Oct 16, 2013
 
 def number_to_name(number):
     # fill in your code below
-    number = num 
-    if num == 0:
-        print 'rock'
-    elif num == 1:
-        print 'Spock'
-    elif num == 2:
-        print 'paper'
-    elif num == 3:
-        print 'lizard'
-    else num == 4:
-        print 'scissors'
+    if number == 0:
+        name = "rock"
+    elif number == 1:
+        name = 'Spock'
+    elif number == 2:
+        name = 'paper'
+    elif number == 3:
+        name = 'lizard'
+    elif number == 4:
+        name = 'scissors'
+    else :
+        print "invalid Number"
+    return number
+
     # convert number to a name using if/elif/else
     # don't forget to return the result!
 
