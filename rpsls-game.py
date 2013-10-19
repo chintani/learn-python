@@ -21,18 +21,19 @@ Created on Oct 16, 2013
 def number_to_name(number):
     # fill in your code below
     if number == 0:
-        name = "rock"
+        name_to_number = "rock"
     elif number == 1:
-        name = 'Spock'
+        name_to_number = 'Spock'
     elif number == 2:
-        name = 'paper'
+        name_to_number = 'paper'
     elif number == 3:
-        name = 'lizard'
+        name_to_number = 'lizard'
     elif number == 4:
-        name = 'scissors'
+        name_to_number = 'scissors'
     else :
+        print "Name not in this game!"
         print "invalid Number"
-    return number
+    return name_to_number
 
     # convert number to a name using if/elif/else
     # don't forget to return the result!
