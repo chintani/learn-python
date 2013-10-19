@@ -37,7 +37,20 @@ def number_to_name(number):
     
 def name_to_number(name):
     # fill in your code below
-
+    if name == "rock":
+        'rock' == 0
+    elif name == "Spock":
+        Spock = 1
+    elif name == "paper":
+        paper = 2
+    elif name == "lizard":
+        lizard = 3
+    elif name == "scissors":
+        scissors = 4
+    else :
+        print "Name not in this game!"
+    
+    return name
     # convert name to number using if/elif/else
     # don't forget to return the result!
 
