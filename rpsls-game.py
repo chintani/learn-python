@@ -30,11 +30,11 @@ def number_to_name(number):
     elif number == 3:
         name = "lizard"
     elif number == 4: 
-        name = "scissors"    
+        name = "scissors"	
     else:
         print "Name not in this game!"
     
-    return name     # return the result!
+    return name 	# return the result!
 
     
 def name_to_number(name):
@@ -56,7 +56,7 @@ def name_to_number(name):
     return number    # return the result!
 
 
-#def rpsls(name): 
+def rpsls(name): 
     # fill in your code below
 
     name = name_to_number
@@ -78,9 +78,9 @@ def name_to_number(name):
     
     comp_number == number_to_name    # convert comp_number to name using number_to_name
     
-print "Player chooses" player_number    # print results
-print "Computer chooses" comp_number
-print winner
+    print "Player chooses" player_number	# print results
+    print "Computer chooses" comp_number
+    print winner
 
     
 # test your code
