@@ -59,16 +59,16 @@ def name_to_number(name):
 def rpsls(name): 
     # fill in your code below
 
-    name = name_to_number
-    name_to_number == player_number    # convert name to player_number using name_to_number
+    player_number = name_to_number(name)
+        # convert name to player_number using name_to_number
 
-    comp_number = random.range(5)    # compute random guess for comp_number using random.randrange()
+    comp_number = random.randrange(5)    # compute random guess for comp_number using random.randrange()
 
     difference = (player_number - comp_number)% 5 # compute difference of player_number and comp_number modulo five
 
-    if difference == 1 or 2:    # use if/elif/else to determine winner
+    if difference == 1 or difference == 2:    # use if/elif/else to determine winner
         winner = "Player wins!"
-    elif difference == 3 or 4:
+    elif difference == 3 or difference == 4:
         winner = "Computer wins!"
     elif difference == 0:
         winner = "Player and Computer tie"
@@ -76,19 +76,19 @@ def rpsls(name):
         "Invalid turn"
         
     
-    comp_number == number_to_name    # convert comp_number to name using number_to_name
+    computer_output = number_to_name(comp_number)    # convert comp_number to name using number_to_name
     
-    print "Player chooses" player_number	# print results
-    print "Computer chooses" comp_number
+    print "Player chooses "  + name	# print results
+    print "Computer chooses " + computer_output
     print winner
-
+    print "\n"
     
 # test your code
-#rpsls("rock")
-#rpsls("Spock")
-#rpsls("paper")
-#rpsls("lizard")
-#rpsls("scissors")
+rpsls("rock")
+rpsls("Spock")
+rpsls("paper")
+rpsls("lizard")
+rpsls("scissors")
 
 # always remember to check your completed program against the grading rubric
 ###################################################
