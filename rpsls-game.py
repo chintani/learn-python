@@ -59,8 +59,7 @@ def name_to_number(name):
 def rpsls(name): 
     # fill in your code below
 
-    player_number = name_to_number(name)
-        # convert name to player_number using name_to_number
+    player_number = name_to_number(name)	# convert name to player_number using name_to_number
 
     comp_number = random.randrange(5)    # compute random guess for comp_number using random.randrange()
 
@@ -71,7 +70,7 @@ def rpsls(name):
     elif difference == 3 or difference == 4:
         winner = "Computer wins!"
     elif difference == 0:
-        winner = "Player and Computer tie"
+        winner = "Player and computer tie!"
     else:
         "Invalid turn"
         
@@ -90,19 +89,4 @@ rpsls("paper")
 rpsls("lizard")
 rpsls("scissors")
 
-# always remember to check your completed program against the grading rubric
-###################################################
-# Test calls to name_to_number()
-#print number_to_name(0)
-#print number_to_name(1)
-#print number_to_name(2)
-#print number_to_name(3)
-#print number_to_name(4)
-
-###################################################
-# Test calls to name_to_number()
-#print name_to_number("rock")
-#print name_to_number("Spock")
-#print name_to_number("paper")
-#print name_to_number("lizard")
-#print name_to_number("scissors")
+# end of code
