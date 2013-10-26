@@ -7,11 +7,14 @@ Created on Oct 24, 2013
 # input will come from buttons and an input field
 # all output for the game will be printed in the console
 
-
+import simplegui
+import math
+import random
 
 # initialize global variables used in your code
 
-
+num_range = 100
+print random.randint(1,100)
 
 # helper function to start and restart the game
 def new_game():
@@ -40,15 +43,19 @@ def input_guess(guess):
 
     
 # create frame
-
+frame = simplegui.create_frame('Guess The Number' 200, 200)
 
 
 # register event handlers for control elements
 
-
+frame.add_button("Range is [0, 100]", range100, 200)
+frame.add_button("Range is [0, 1000]", range1000, 200)
+frame.add_input("Guess a number", get_input, 200)
 
 # call new_game and start frame
-
+new_game()
 
 
 # always remember to check your completed program against the grading rubric
+
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user21_ReT3kya23l_0.py
