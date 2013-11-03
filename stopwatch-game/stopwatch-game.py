@@ -4,7 +4,9 @@ Created on Oct 31, 2013
 @author: Tania
 '''
 # template for "Stopwatch: The Game"
-
+import simplegui
+import math
+import random
 # define global variables
 
 
