@@ -7,14 +7,17 @@ Created on Oct 24, 2013
 # input will come from buttons and an input field
 # all output for the game will be printed in the console
 
-import simplegui
+#import simplegui
 import math
 import random
 
 # initialize global variables used in your code
 
 num_range = 100
-print random.randint(1,100)
+num_range2 = 1000
+secret_number=0
+Maximum_guess = 7
+Maximum_guess2 = 10
 
 # helper function to start and restart the game
 #def new_game():
