@@ -7,7 +7,7 @@ Created on Oct 24, 2013
 # input will come from buttons and an input field
 # all output for the game will be printed in the console
 
-#import simplegui
+import simplegui
 import math
 import random
 
@@ -18,29 +18,37 @@ num_range2 = 1000
 secret_number=0
 Maximum_guess = 7
 Maximum_guess2 = 10
-
 # helper function to start and restart the game
-#def new_game():
-    # remove this when you add your code    
-    #pass
+def new_game():
+    secret_number = random.randint(1,100)
+    if num_range == 100:
+        Maximim_guess == 7
+    elif num_range2 == 1000:
+        Maximum_guess2 == 10
+#    else return "??"   
+# remove this when you add your code    
+#pass
 
 
 # define event handlers for control panel
-#def range100():
+def range100():
     # button that changes range to range [0,100) and restarts
-    
+   num_range 
+   new_game() 
     # remove this when you add your code    
     #pass
 
-#def range1000():
+def range1000():
     # button that changes range to range [0,1000) and restarts
-    
+    num_range2
+    new_game
     # remove this when you add your code    
     #pass
     
 #def input_guess(guess):
     # main game logic goes here    
-    
+    print "New Game"
+    print "Maximum guesses allowed is"   
     # remove this when you add your code
     #pass
 
@@ -60,5 +68,4 @@ Maximum_guess2 = 10
 
 
 # always remember to check your completed program against the grading rubric
-
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user22_ReT3kya23l_1.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user23_ReT3kya23l_3.py
