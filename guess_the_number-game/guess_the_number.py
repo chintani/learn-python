@@ -47,20 +47,24 @@ def range1000():
     
     
 def input_guess(guess):
-    # main game logic goes here    
+    # main game logic goes here
+    global secret_number
+    guess = int(guess)
+        print "Your guess was:" guess
+    if guess < secret_number:
+        print "Higher!"
+    if guess is > secret_number:
+        print "Lower!"
+    if guess is == secret_number:
+        print "Correct!"
+    else:
+        pass
+        
     #print "New Game"
-     
-    #print "Higher!"\
-    #print "Lower!"
-    #print "Correct!"
-    
-
     #"Number of remaining guesses is"
     #"You ran out of guesses. The number was"
     # remove this when you add your code
-    #pass
-
-    
+        
 # create frame
 frame = simplegui.create_frame("Guess The Number", 200, 200)
 
@@ -77,4 +81,4 @@ new_game()
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user23_ReT3kya23l_4.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user23_ReT3kya23l_5.py
