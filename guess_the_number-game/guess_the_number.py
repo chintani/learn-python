@@ -50,12 +50,12 @@ def input_guess(guess):
     # main game logic goes here
     global secret_number
     guess = int(guess)
-        print "Your guess was:" guess
+#        print "Your guess was:" guess
     if guess < secret_number:
         print "Higher!"
-    if guess is > secret_number:
+#    if guess is > secret_number:
         print "Lower!"
-    if guess is == secret_number:
+#    if guess is == secret_number:
         print "Correct!"
     else:
         pass
@@ -73,7 +73,7 @@ frame = simplegui.create_frame("Guess The Number", 200, 200)
 
 frame.add_button("Range is [0, 100]", range100, 200)
 frame.add_button("Range is [0, 1000]", range1000, 200)
-frame.add_input("Guess a number", get_input, 200)
+frame.add_input("Guess a number", guess, 200)
 
 # call new_game and start frame
 frame.start
@@ -81,4 +81,4 @@ new_game()
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user23_ReT3kya23l_5.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user23_ReT3kya23l_6.py
