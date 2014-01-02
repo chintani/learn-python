@@ -22,14 +22,14 @@ def new_game():
     secret_number = random.randint(1,100)
     print "New game. Pick a number between 1 - 100"
     print "Number of remaining guesses is", #Maximum_guess
-  # if num_range <= 100:
+    # if num_range <= 100:
         
-  # elif num_range <= 1000:
-   #     Maximum_guess = 10
-   #     print "New game. Pick a number between 1 - 1000"
-   #     print "Number of remaining guesses is"
-  # else:
-  #      print "Number not within range, please choose a new number."
+    # elif num_range <= 1000:
+    #     Maximum_guess = 10
+    #     print "New game. Pick a number between 1 - 1000"
+    #     print "Number of remaining guesses is"
+    # else:
+    #      print "Number not within range, please choose a new number."
     
 # define event handlers for control panel
 
@@ -84,4 +84,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_4.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_5.py
