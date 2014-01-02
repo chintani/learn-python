@@ -61,10 +61,11 @@ def range1000():
        
     
 def input_guess(guess):
-    # main game logic goes here    
-    
+# main game logic goes here    
+    global num_range
+    num_range = int(guess)
     # remove this when you add your code
-    pass
+ 
 
     
 # create frame
@@ -83,4 +84,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_3.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_4.py
