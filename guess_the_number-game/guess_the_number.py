@@ -18,10 +18,10 @@ secret_number = 0
 
 # helper function to start and restart the game
 def new_game():
-   global num_range, secret_number
-   secret_number = random.randint(1,100)
-   print "New game. Pick a number between 1 - 100"
-   print "Number of remaining guesses is", #Maximum_guess
+    global num_range, secret_number
+    secret_number = random.randint(1,100)
+    print "New game. Pick a number between 1 - 100"
+    print "Number of remaining guesses is", #Maximum_guess
   # if num_range <= 100:
         
   # elif num_range <= 1000:
@@ -35,24 +35,30 @@ def new_game():
 
 def range100():
 # button that changes range to range [0,100) and restarts
-   global secret_number
-   secret_number = random.randint(1, 100)
-   if input_guess < secret_number:
+    global secret_number
+    secret_number = random.randint(1, 100)
+    if input_guess < secret_number:
         print "Higher"
-   elif input_guess > secret_number:
+    elif input_guess > secret_number:
         print "Lower"
-   elif input_guess == secret_number:
+    elif input_guess == secret_number:
         print "Correct!"
-   else:
+    else:
         print "Please choose a number between 1 - 100"
-    # remove this when you add your code    
-    #pass
-
-def range1000():
-    # button that changes range to range [0,1000) and restarts
     
-    # remove this when you add your code    
-    pass
+def range1000():
+# button that changes range to range [0,1000) and restarts
+    global secret_number
+    secret_number = random.randint(1, 1000)
+    if input_guess < secret_number:
+        print "Higher"
+    elif input_guess > secret_number:
+        print "Lower"
+    elif input_guess == secret_number:
+        print "Correct!"
+    else:
+        print "Please choose a number between 1 - 1000"
+       
     
 def input_guess(guess):
     # main game logic goes here    
@@ -77,4 +83,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_2.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_3.py
