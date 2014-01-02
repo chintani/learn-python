@@ -45,7 +45,8 @@ def range100():
         print "Correct!"
     else:
         print "Please choose a number between 1 - 100"
-    
+        new_game()
+        
 def range1000():
 # button that changes range to range [0,1000) and restarts
     global secret_number
@@ -58,15 +59,14 @@ def range1000():
         print "Correct!"
     else:
         print "Please choose a number between 1 - 1000"
-       
+        new_game()
     
 def input_guess(guess):
 # main game logic goes here    
     global num_range
     num_range = int(guess)
-    # remove this when you add your code
- 
-
+    new_game()
+    
     
 # create frame
 frame = simplegui.create_frame("Guess The Number", 200, 200)
@@ -84,4 +84,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_5.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_6.py
