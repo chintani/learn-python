@@ -21,11 +21,12 @@ def new_game():
    global num_range
    secret_number = random.randint(1,100)
    if num_range <= 100:
-        Maximim_guess = 7
         print "New game. Pick a number between 1 - 100"
+        print "Number of remaining guesses is", #Maximum_guess
    elif num_range <= 1000:
         Maximum_guess = 10
         print "New game. Pick a number between 1 - 1000"
+        print "Number of remaining guesses is"
    else:
         print "Number not within range, please choose a new number."
     
@@ -63,5 +64,7 @@ frame.add_input("Guess a number", input_guess, 200)
 new_game()
 frame.start
 
+
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_0.py
+
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_1.py
