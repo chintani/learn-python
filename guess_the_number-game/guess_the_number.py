@@ -65,7 +65,8 @@ def input_guess(guess):
 # main game logic goes here    
     global num_range
     num_range = int(guess)
-    new_game()
+    print "Your guess was", num_range
+  
     
     
 # create frame
@@ -84,4 +85,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_6.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_7.py
