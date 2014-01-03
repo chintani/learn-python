@@ -15,22 +15,22 @@ import random
 # initialize global variables used in your code
 num_range = 100
 secret_number = 0
-
+maximum_guess = 7
 # helper function to start and restart the game
 def new_game():
-    global num_range, secret_number
-    secret_number = random.randint(0,100)
     print "New game. Pick a number between 0 - 100"
-    print "Number of remaining guesses is", #Maximum_guess
+    print "Number of remaining guesses is", maximum_guess
     print "\n"
-    # if num_range <= 100:
+    if range100():
+        print "New game. Pick a number between 0 - 100"
+        print "Number of remaining guesses is", #maximum_guess
+    elif range1000():
+        print "New game. Pick a number between 0 - 1000"
+        print "Number of remaining guesses is", #maximum-guess
+    #else:
+        #print "Number not within range, please choose a new number."
+         
         
-    # elif num_range <= 1000:
-    #     Maximum_guess = 10
-    #     print "New game. Pick a number between 1 - 1000"
-    #     print "Number of remaining guesses is"
-    # else:
-    #      print "Number not within range, please choose a new number."
     
 # define event handlers for control panel
 
@@ -38,42 +38,28 @@ def range100():
 # button that changes range to range [0,100) and restarts
     global secret_number
     secret_number = random.randint(0, 100)
-    if input_guess < secret_number:
-        print "Higher"
-    elif input_guess > secret_number:
-        print "Lower"
-    elif input_guess == secret_number:
-        print "Correct!"
-    else:
-        print "Please choose a number between 0 - 100"
-        new_game()
-        
+    
 def range1000():
 # button that changes range to range [0,1000) and restarts
     global secret_number
     secret_number = random.randint(0, 1000)
-    if input_guess < secret_number:
-        print "Higher"
-    elif input_guess > secret_number:
-        print "Lower"
-    elif input_guess == secret_number:
-        print "Correct!"
-    else:
-        print "Please choose a number between 0 - 1000"
-        new_game()
-    
+        
 def input_guess(guess):
 # main game logic goes here    
-    global num_range
+    global num_range, maximum_guess
     num_range = int(guess)
+    maximum_guess = maximum_guess -1
+    
     print "Your guess was", num_range
-    print "Number of remaining guesses is"
+    print "Number of remaining guesses is", maximum_guess 
     if num_range < secret_number:
         print "Higher!"
     elif num_range > secret_number:
         print "Lower!"
     elif num_range == secret_number:
         print "Correct!"
+    elif maximum_guess < 0:
+        print "dont know"
     else:
         new_game()
     print "\n"
@@ -94,4 +80,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_9.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_10.py
