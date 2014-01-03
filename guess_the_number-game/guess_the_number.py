@@ -22,6 +22,7 @@ def new_game():
     secret_number = random.randint(0,100)
     print "New game. Pick a number between 0 - 100"
     print "Number of remaining guesses is", #Maximum_guess
+    print "\n"
     # if num_range <= 100:
         
     # elif num_range <= 1000:
@@ -66,8 +67,16 @@ def input_guess(guess):
     global num_range
     num_range = int(guess)
     print "Your guess was", num_range
-  
-    
+    print "Number of remaining guesses is"
+    if num_range < secret_number:
+        print "Higher!"
+    elif num_range > secret_number:
+        print "Lower!"
+    elif num_range == secret_number:
+        print "Correct!"
+    else:
+        new_game()
+    print "\n"
     
 # create frame
 frame = simplegui.create_frame("Guess The Number", 200, 200)
@@ -85,4 +94,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_8.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_9.py
