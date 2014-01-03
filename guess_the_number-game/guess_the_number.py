@@ -36,14 +36,19 @@ def new_game():
 
 def range100():
 # button that changes range to range [0,100) and restarts
-    global secret_number
+    global secret_number 
     secret_number = random.randint(0, 100)
+    #new_game()
     
 def range1000():
 # button that changes range to range [0,1000) and restarts
-    global secret_number
+    global secret_number, num_range, maximum_guess
     secret_number = random.randint(0, 1000)
-        
+    num_range = 1000
+    maximum_guess = 10
+    #new_game()
+
+    
 def input_guess(guess):
 # main game logic goes here    
     global num_range, maximum_guess
@@ -80,4 +85,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_10.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_11.py
