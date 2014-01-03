@@ -16,6 +16,7 @@ import random
 num_range = 100
 secret_number = 0
 maximum_guess = 7
+
 # helper function to start and restart the game
 def new_game():
     print "New game. Pick a number between 0 - 100"
@@ -63,11 +64,11 @@ def input_guess(guess):
         print "Lower!"
     elif num_range == secret_number:
         print "Correct!"
-    elif maximum_guess < 0:
-        print "dont know"
-    else:
+    elif maximum_guess < 1:
+        print "You have exceeded your guesses. The number was", secret_number
         new_game()
-    print "\n"
+    print "\n"    
+   
     
 # create frame
 frame = simplegui.create_frame("Guess The Number", 200, 200)
@@ -85,4 +86,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_11.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_12.py
