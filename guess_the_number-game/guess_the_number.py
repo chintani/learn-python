@@ -19,17 +19,19 @@ maximum_guess = 7
 
 # helper function to start and restart the game
 def new_game():
-    print "New game. Pick a number between 0 - 100"
-    print "Number of remaining guesses is", maximum_guess
+    print "New game. Pick a number between 0 -", num_range
+    print "Number of guesses is", maximum_guess
     print "\n"
     if range100():
-        print "New game. Pick a number between 0 - 100"
-        print "Number of remaining guesses is", #maximum_guess
+        print "New game. Pick a number between 0 -", num_range
+        print "Number of guesses is", maximum_guess
+        print "\n"
     elif range1000():
-        print "New game. Pick a number between 0 - 1000"
-        print "Number of remaining guesses is", #maximum-guess
-    #else:
-        #print "Number not within range, please choose a new number."
+        print "New game. Pick a number between 0 -", num_range
+        print "Number of guesses is", maximum_guess
+        print "\n"
+    else:
+        pass
          
         
     
@@ -86,4 +88,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_12.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_13.py
