@@ -21,17 +21,8 @@ maximum_guess = 7
 def new_game():
     print "New game. Pick a number between 0 -", num_range
     print "Number of guesses is", maximum_guess
-    print "\n"
-    if range100():
-        print "New game. Pick a number between 0 -", num_range
-        print "Number of guesses is", maximum_guess
-        print "\n"
-    elif range1000():
-        print "New game. Pick a number between 0 -", num_range
-        print "Number of guesses is", maximum_guess
-        print "\n"
-    else:
-        pass
+    print secret_number, "\n"
+    
          
         
     
@@ -41,6 +32,7 @@ def range100():
 # button that changes range to range [0,100) and restarts
     global secret_number 
     secret_number = random.randint(0, 100)
+    print secret_number
     #new_game()
     
 def range1000():
@@ -49,6 +41,7 @@ def range1000():
     secret_number = random.randint(0, 1000)
     num_range = 1000
     maximum_guess = 10
+    print secret_number
     #new_game()
 
     
@@ -58,18 +51,23 @@ def input_guess(guess):
     num_range = int(guess)
     maximum_guess = maximum_guess -1
     
-    print "Your guess was", num_range
-    print "Number of remaining guesses is", maximum_guess 
     if num_range < secret_number:
+        print "Your guess was", num_range
+        print "Number of remaining guesses is", maximum_guess
         print "Higher!"
     elif num_range > secret_number:
+        print "Your guess was", num_range
+        print "Number of remaining guesses is", maximum_guess
         print "Lower!"
     elif num_range == secret_number:
+        print "Your guess was", num_range
         print "Correct!"
-    elif maximum_guess < 1:
+        
+    if maximum_guess < 1:
         print "You have exceeded your guesses. The number was", secret_number
+        print "\n"
         new_game()
-    print "\n"    
+        
    
     
 # create frame
@@ -88,4 +86,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_m46cME57C0_13.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_0.py
