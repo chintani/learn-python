@@ -31,17 +31,18 @@ def new_game():
 
 def range100():
 # button that changes range to range [0,100) and restarts
-    global secret_number 
+    global secret_number, wasPlayingRange100 
     secret_number = random.randint(0, 100)
     print secret_number
     print "New game. Pick a number between 0 -", num_range
     print "Number of guesses is", maximum_guess
     print "\n"
+    wasPlayingRange100 = True
     #new_game()
     
 def range1000():
 # button that changes range to range [0,1000) and restarts
-    global secret_number, num_range, maximum_guess
+    global secret_number, num_range, maximum_guess, wasPlayingRange100
     secret_number = random.randint(0, 1000)
     num_range = 1000
     maximum_guess = 10
@@ -49,6 +50,7 @@ def range1000():
     print "New game. Pick a number between 0 -", num_range
     print "Number of guesses is", maximum_guess
     print secret_number, "\n"
+    wasPlayingRange100 = False
     #new_game()
 
     
@@ -96,4 +98,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_1.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_2.py
