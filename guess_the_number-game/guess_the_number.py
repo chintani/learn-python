@@ -16,13 +16,14 @@ import random
 num_range = 100
 secret_number = 0
 maximum_guess = 7
+wasPlayingRange100 = True
 
 # helper function to start and restart the game
 def new_game():
-    print "New game. Pick a number between 0 -", num_range
-    print "Number of guesses is", maximum_guess
-    print secret_number, "\n"
-    
+    if wasPlayingRange100:
+        range100()
+    else:
+        range1000()
          
         
     
@@ -33,6 +34,9 @@ def range100():
     global secret_number 
     secret_number = random.randint(0, 100)
     print secret_number
+    print "New game. Pick a number between 0 -", num_range
+    print "Number of guesses is", maximum_guess
+    print "\n"
     #new_game()
     
 def range1000():
@@ -42,6 +46,9 @@ def range1000():
     num_range = 1000
     maximum_guess = 10
     print secret_number
+    print "New game. Pick a number between 0 -", num_range
+    print "Number of guesses is", maximum_guess
+    print secret_number, "\n"
     #new_game()
 
     
@@ -55,14 +62,17 @@ def input_guess(guess):
         print "Your guess was", num_range
         print "Number of remaining guesses is", maximum_guess
         print "Higher!"
+        print "\n"
+        
     elif num_range > secret_number:
         print "Your guess was", num_range
         print "Number of remaining guesses is", maximum_guess
         print "Lower!"
+        print "\n"
     elif num_range == secret_number:
         print "Your guess was", num_range
         print "Correct!"
-        
+        print "\n"
     if maximum_guess < 1:
         print "You have exceeded your guesses. The number was", secret_number
         print "\n"
@@ -86,4 +96,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_0.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_1.py
