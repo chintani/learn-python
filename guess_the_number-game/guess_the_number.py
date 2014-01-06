@@ -34,6 +34,7 @@ def range100():
     global secret_number, wasPlayingRange100 
     secret_number = random.randint(0, 100)
     num_range = 100
+    maximum_guess = 7
     print secret_number
     print "New game. Pick a number between 0 -", num_range
     print "Number of guesses is", maximum_guess
@@ -99,4 +100,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_3.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_4.py
