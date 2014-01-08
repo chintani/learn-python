@@ -22,8 +22,10 @@ wasPlayingRange100 = True
 def new_game():
     if wasPlayingRange100:
         range100()
+        maximum_guess = 7
     else:
         range1000()
+        maximum_guess = 10
     
 # define event handlers for control panel
 # button that changes range to range [0,100) and restarts
@@ -99,4 +101,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_5.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_6.py
