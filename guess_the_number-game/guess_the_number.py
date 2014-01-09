@@ -57,22 +57,28 @@ def range1000():
 # main game logic goes here    
 def input_guess(guess):
     global num_range, maximum_guess
-    num_range = int(guess)
-    maximum_guess = maximum_guess -1
+       
+    if ( maximum_guess > 0):
+    
+        num_range = int(guess)
+    
     
     if num_range < secret_number:
+        maximum_guess = maximum_guess -1
         print "Your guess was", num_range
         print "Number of remaining guesses is", maximum_guess
         print "Higher!"
         print "\n"
         
     elif num_range > secret_number:
+        maximum_guess = maximum_guess -1
         print "Your guess was", num_range
         print "Number of remaining guesses is", maximum_guess
         print "Lower!"
         print "\n"
         
     elif num_range == secret_number:
+        maximum_guess = maximum_guess -1
         print "Your guess was", num_range
         print "Correct!"
         print "\n"
@@ -101,4 +107,4 @@ frame.start
 
 
 # always remember to check your completed program against the grading rubric
-#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_6.py
+#URL to keep track of my work in codeskulptor:http://www.codeskulptor.org/#user28_sXA11QPFN8_7.py
