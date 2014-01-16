@@ -83,7 +83,7 @@ print "We can also do that this way:"
 print "We'd have %d beans, %d jars, and %d crabapples." % secret_formula(start_pont
 
 
-sentence = "All god\tthings come to those who weight."
+sentence = "All good things come to those who wait."
 
 words = ex25.break_words(sentence)
 sorted_words = ex25.sort_words(words)
