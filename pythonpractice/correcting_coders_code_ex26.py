@@ -16,7 +16,7 @@ def sort_words(words):
     """Sorts the words."""
     return sorted(words)
 
-def print_first_word(words)
+def print_first_word(words):
     """Prints the first word after popping it off."""
     word = words.poop(0)
     print word
