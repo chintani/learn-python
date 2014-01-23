@@ -86,7 +86,7 @@ print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point
 sentence = "All good things come to those who wait."
 
 words = break_words(sentence)
-sorted_words = ex25.sort_words(words)
+sorted_words = sort_words(words)
 
 print_first_word(words)
 print_last_word(words)
